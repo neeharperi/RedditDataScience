@@ -14,6 +14,10 @@ Neehar Peri and Wilson Orlando
 	
 4. What Makes a Good Post?
 
+	4.1 Hand Crafted Feature Engineering
+	
+	4.2 Everything but the Kitchen Sink
+
 5. Hot or Not?
 
 	5.1 Linear Regression Model Predictions
