@@ -19,3 +19,5 @@ Neehar Peri and Wilson Orlando
 	5.1 Linear Regression Model Predictions
 	
 	5.2 Deep Learning Model Predictions
+	
+6. Conclusion
