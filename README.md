@@ -17,9 +17,12 @@ Neehar Peri and Wilson Orlando
 	4.1 Hand Crafted Feature Engineering
 	
 5. Hot or Not?
-
-	5.1 Linear Regression Model Predictions
+	5.1 Logistic Classification Model Predictions
 	
-	5.2 Deep Learning Model Predictions
+	5.2 Linear Regression Model Predictions
+	
+	5.3 Neural Network Model Regression Predictions
+	
+	5.4 Neural Network Model Classification Predictions
 	
 6. Conclusion
