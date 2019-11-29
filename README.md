@@ -19,7 +19,11 @@ Neehar Peri and Wilson Orlando
 5. Hot or Not?
 
 	5.1 Linear Regression Model Predictions
+
+	5.2 Neural Network Regression Model Predictions 
+
+	5.3 Logistic Classification Model Predictions
 	
-	5.2 Deep Learning Regression Model Predictions
+	5.4 Neural Network Classification Model Predictions
 	
 6. Conclusion
