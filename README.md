@@ -17,6 +17,7 @@ Neehar Peri and Wilson Orlando
 	4.1 Hand Crafted Feature Engineering
 	
 5. Hot or Not?
+
 	5.1 Logistic Classification Model Predictions
 	
 	5.2 Linear Regression Model Predictions
