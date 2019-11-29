@@ -50,13 +50,24 @@ for tableRow in dataSet.iterrows():
     dataSet.at[tableRow[0], "title_subjectivity"] = titleSubjectivity
     dataSet.at[tableRow[0], "body"] = body
     dataSet.at[tableRow[0], "len_body"] = lenBody
-    dataSet.at[tableRow[0], "is_self"] = 1 if originalContent == "True" else 0
-    dataSet.at[tableRow[0], "over_18"] = 1 if nsfw == "True" else 0
-    dataSet.at[tableRow[0], "spoiler"] = 1 if spoiler == "True" else 0
+    
+    dataSet.at[tableRow[0], "is_oc"] = 0
+    if originalContent:
+        dataSet.at[tableRow[0], "is_oc"] = 1
 
+
+    dataSet.at[tableRow[0], "is_nsfw"] = 0
+    if nsfw:
+        dataSet.at[tableRow[0], "is_nsfw"] = 1
+
+    dataSet.at[tableRow[0], "is_spoiler"] = 0
+    if spoiler:
+        dataSet.at[tableRow[0], "is_spoiler"] = 1
+
+dataSet = dataSet.drop(["is_self", "over_18", "spoiler",], axis=1)
 subRedditLookUp = pd.DataFrame(uniqueSubReddits)
 subRedditOneHotEncoding = pd.get_dummies(subRedditLookUp)
 
-dataSet.to_csv("dataSet.csv")
-subRedditLookUp.to_csv("subRedditLookUp.csv")
-subRedditOneHotEncoding.to_csv("subRedditOneHotEncoding.csv")    
+dataSet.to_csv("dataSet.csv", index=False)
+subRedditLookUp.to_csv("subRedditLookUp.csv", index=False)
+subRedditOneHotEncoding.to_csv("subRedditOneHotEncoding.csv", index=False)    
