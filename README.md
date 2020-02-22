@@ -1,5 +1,6 @@
 # Reddit Data Science Tutorial
 Neehar Peri and Wilson Orlando
+
 https://neeharperi.github.io/RedditDataScience/
 
 ## Table of Contents
